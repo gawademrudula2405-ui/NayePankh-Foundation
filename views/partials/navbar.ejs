@@ -1,0 +1,29 @@
+<nav class="navbar">
+
+    <div class="logo">
+        Naye Pankh Foundation
+    </div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/programs">Programs</a>
+        <a href="/events">Events</a>
+        <a href="/volunteer">Volunteer</a>
+        <a href="/donate">Donate</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/contact">Contact</a>
+    </div>
+
+</nav>
+
+<script>
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+        const path = window.location.pathname;
+        const href = link.getAttribute("href");
+
+        if (href === path) {
+            link.classList.add("active");
+        }
+    });
+</script>

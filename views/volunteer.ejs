@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Volunteer Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<%- include('partials/navbar') %>
+
+<section class="about">
+
+    <h1><span class="sticker">🤝</span>Become a Volunteer</h1>
+    <br>
+
+    <form action="/volunteer" method="POST">
+
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <br><br>
+
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <br><br>
+
+        <input type="text" name="phone" placeholder="Enter Phone Number" required>
+        <br><br>
+
+        <input type="text" name="city" placeholder="Enter City" required>
+        <br><br>
+
+        <button type="submit" class="btn">
+            Register
+        </button>
+
+    </form>
+
+</section>
+
+<%- include('partials/footer') %>
+
+</body>
+</html>

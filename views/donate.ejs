@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<%- include('partials/navbar') %>
+
+<section class="about">
+
+    <h1><span class="sticker">💛</span>Support Naye Pankh Foundation</h1>
+    <br>
+
+    <form action="/donate" method="POST">
+
+        <input type="text" name="fullname"
+        placeholder="Full Name" required>
+        <br><br>
+
+        <input type="text" name="whatsapp"
+        placeholder="WhatsApp Number" required>
+        <br><br>
+
+        <input type="email" name="email"
+        placeholder="Email Address" required>
+        <br><br>
+
+        <input type="text" name="city"
+        placeholder="City" required>
+        <br><br>
+
+        <input type="text" name="donation_type"
+        placeholder="Donation Type (Money, Books, Clothes, Food)"
+        required>
+        <br><br>
+
+        <button class="btn">
+            Submit Donation Interest
+        </button>
+
+    </form>
+
+</section>
+
+<%- include('partials/footer') %>
+
+</body>
+</html>

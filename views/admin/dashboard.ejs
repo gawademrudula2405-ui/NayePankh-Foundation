@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<a href="/admin/logout">Logout</a>
+
+<hr>
+
+<h1>Admin Dashboard</h1>
+
+<hr>
+
+<h2>Volunteers</h2>
+
+<table border="1" cellpadding="10">
+
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>City</th>
+    </tr>
+
+    <% volunteers.forEach(volunteer => { %>
+
+    <tr>
+        <td><%= volunteer.id %></td>
+        <td><%= volunteer.name %></td>
+        <td><%= volunteer.email %></td>
+        <td><%= volunteer.phone %></td>
+        <td><%= volunteer.city %></td>
+    </tr>
+
+    <% }) %>
+
+</table>
+
+<br><br>
+
+<h2>Donors</h2>
+
+<table border="1" cellpadding="10">
+
+    <tr>
+        <th>ID</th>
+        <th>Full Name</th>
+        <th>WhatsApp</th>
+        <th>Email</th>
+        <th>City</th>
+        <th>Donation Type</th>
+    </tr>
+
+    <% donors.forEach(donor => { %>
+
+    <tr>
+        <td><%= donor.id %></td>
+        <td><%= donor.fullname %></td>
+        <td><%= donor.whatsapp %></td>
+        <td><%= donor.email %></td>
+        <td><%= donor.city %></td>
+        <td><%= donor.donation_type %></td>
+    </tr>
+
+    <% }) %>
+
+</table>
+
+</body>
+</html>
